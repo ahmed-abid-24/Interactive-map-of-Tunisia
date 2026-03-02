@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carte interactive des 24 gouvernorats de Tunisie">
+    <meta name="keywords" content="Tunisie, gouvernorats, carte interactive, géographie">
+    <title>Carte Interactive - 24 Gouvernorats de Tunisie</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carte.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>🇹🇳 Carte Interactive des 24 Gouvernorats de Tunisie</h1>
+        <p>Explorez les régions de la Tunisie - Cliquez sur chaque gouvernorat pour en savoir plus</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <!-- Section Statistiques -->
+        <section class="stats-container">
+            <h2>Statistiques de la Tunisie</h2>
+            <div class="stats-grid">
+                <!-- Les statistiques seront générées par JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section Carte Interactive -->
+        <section class="map-section">
+            <h2>Explorez la Carte</h2>
+            <div class="map-container">
+                <div class="map-wrapper">
+                    
+                    <!-- SVG Carte Interactive de la Tunisie -->
+                    <svg viewBox="0 0 580 680" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="tunisie-map interactive-overlay" style="display: block; width: 100%; height: auto;">
+                        <!-- Fond -->
+                        <rect width="580" height="680" fill="#e8f4f8"/>
+                        
+                        <!-- CARTE VISUELLE EN ARRIÈRE-PLAN (z-index bas) -->
+                        <defs>
+                            <style type="text/css">
+                                .map-bg-element{fill:#FFEB64;stroke:#808080;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;}
+                                .map-bg-element.st1{fill:#89B8E4;}
+                                .map-bg-element.st2{fill:#FBD165;}
+                                .map-bg-element.st3{fill:#AC8FC7;}
+                                .map-bg-element.st4{fill:#F8A758;}
+                                .map-bg-element.st5{fill:#E89BBD;}
+                                .map-bg-element.st6{fill:#BACE6B;}
+                                .map-bg-element.st7{fill:#8EC79A;}
+                            </style>
+                        </defs>
+                        
+                        <!-- Groupe de la carte de base (z-index bas) -->
+                        <g id="map-background" opacity="0.85">
+                            <path class="map-bg-element" d="M505.071,420.221l-19.562,9.342l-1.727,1.852l-2.551,5.903l-2.073,2.069l-2.296,1.42 l-2.119,1.722l-1.236,0.384l-1.158-0.46l-1.138-0.648l-1.19-0.161l-1.426,1.523l-0.53,5.943l-0.824,2.464l-2.668,2.493l-1.066,2.561 l-0.759,1.114l-0.929,0.941l-1.033,0.83l-3.466,1.37l-7.109-0.092l-3.257,2.616l-4.271,7.537l-4.042,4.51l-0.994,1.71l-0.674,4.815 l0.118,1.281l4.722,12.61l1.929,7.76l2.001,4.207l0.085,1.368l-0.353,2.822l0.281,2.604l1.589,5.145l-0.026,2.457l-1.001,2.961 l-3.905,8.102l-5.762,6.557l-6.678,10.763l-7.868,10.177l-1.615,0.939l-4.611,0.305l-1.864,0.494L399.856,570l-1.792-8.026 l-1.792-8.035l-1.792-8.04l-1.799-8.05l-1.799-8.063l-1.792-8.068l-1.792-8.081l-1.792-8.091l-1.805-8.096l-1.785-8.11 l-1.799-8.116l-1.792-8.129l-1.792-8.139l-1.799-8.141l-1.785-8.158l-1.805-8.168l-0.17-0.781l-1.158-5.323l-0.713-1.406 l-0.876-1.049l-10.654-7.69l-13.238-9.565l-10.105-7.319l-7.763-4.943l-1.731-1.893l1.169-0.361l74.237-15.273l1.589-0.727 l0.67-0.391l2.58-2.194l1.308-0.813l1.54-0.527l1.671-0.376l2.041-0.168l0.775,0.056l0.974,0.215l1.158,0.42l0.52,0.316 l0.559,0.438l0.265,0.255l2.005,2.512l6.835,5.487l1.57,0.914l0.697,0.276l0.327,0.072l0.285,0.015l0.294-0.027l0.245-0.145 l0.167-0.286l-0.186-0.518l-0.157-0.354l-2.534-4.485l-0.098-0.28l-0.049-0.638l0.108-3.048l0.186-1.559l0.137-0.292l0.177-0.29 l1.573-1.896l0.736-1.189l0.118-0.289l0.03-0.355l-0.088-0.407l-0.334-0.649l-0.471-0.767l-0.157-0.55l-0.278-2.415l-0.059-1.357 l0.049-0.303l0.091-0.268l0.137-0.26l0.186-0.225l0.255-0.186l0.255-0.122l0.795-0.211l0.569-0.225l0.255-0.163l0.02-0.402 l-0.265-0.563l-1.53-1.634l-2.564-1.962l-0.333-0.305l-0.275-0.344l-0.235-0.429l-0.059-0.441l-0.01-0.316l0.314-1.084l5.468-0.128 l1.377-0.206l1.57-0.423l2.152-0.909l0.265-0.19l0.216-0.233l1.315-1.885l0.334-0.342l0.425-0.356l0.785-0.548l0.451-0.222 l0.393-0.117l1.158,0.076l3.241,0.634l0.775-0.004l0.425-0.134l0.304-0.224l0.422-0.575l0.579-0.383l4.33-1.853l0.834-0.55 l11.099-4.918l0.53-0.169l0.549-0.039l2.217,0.3l4.902-0.594l0.618,0.078l0.167,0.253l0.039,0.253l-0.039,0.257l-0.128,0.263 l-0.491,0.774l-0.078,0.272l-0.01,0.278l-0.078,0.265l-0.177,0.233l-1.269,0.442l-0.186,0.22l-0.088,0.253l0.02,0.278l0.118,0.263 l0.186,0.263l0.255,0.274l0.612,0.484l0.598,0.335l1.118,0.35l2.917,0.346l1.383,0.329l17.509,8.223l0.353,0.249l0.285,0.258 l0.177,0.233l0.131,0.219l0.069,0.169l0.834,3.523l0.186,0.402l0.383,0.601l0.481,0.561l2.682,2.454l0.814,0.553l0.765,0.405 l0.422,0.285l0.337,0.297l0.167,0.262l0.137,0.271l0.147,0.512l0.039,0.252v0.52l-0.206,1.279l-0.343,1.219l-0.818,2.185 l-0.108,0.54l-0.069,0.639l0.245,6.442l-0.069,0.925l-0.608,2.338l-0.039,0.29v0.29l0.088,0.3l0.206,0.284l16.655,13.747 l0.589,0.334l0.451,0.199l0.471,0.033l1.799-0.334l0.54,0.029l0.284,0.183l0.118,0.311l-0.078,0.297l-0.157,0.316l-0.422,0.561 l-0.549,0.559l-2.279,1.664l-0.981,0.492l-3.005,1.12l-1.246,0.748l-1.151,0.842l-1.109,1l-1.06,1.233l-4.091,7.663 L505.071,420.221z"/>
+                            <path class="map-bg-element st1" d="M526.824,408.619l-0.771,0.736l-4.421,2.947l-16.561,7.919l0.026-0.05l4.091-7.663l1.06-1.233l1.109-1 l1.151-0.842l1.246-0.748l3.005-1.12l0.981-0.492l2.279-1.664l0.549-0.559l0.422-0.561l0.157-0.316l0.078-0.297l-0.118-0.311 l-0.284-0.183l-0.54-0.029l-1.799,0.334l-0.471-0.033l-0.451-0.199l-0.589-0.334l-16.655-13.747l-0.206-0.284l-0.088-0.3v-0.29 l0.039-0.29l0.608-2.338l0.069-0.925l-0.245-6.442l0.069-0.639l0.108-0.54l0.818-2.185l0.343-1.219l0.206-1.279v-0.52l-0.039-0.252 l-0.147-0.512l-0.137-0.271l-0.167-0.262l-0.337-0.297l-0.422-0.285l-0.765-0.405l-0.814-0.553l-2.682-2.454l-0.481-0.561 l-0.383-0.601l-0.186-0.402l-0.834-3.523l-0.069-0.169l-0.131-0.219l-0.177-0.233l-0.285-0.258l-0.353-0.249l-17.509-8.223 l-1.383-0.329l-2.917-0.346l-1.118-0.35l-0.598-0.335l-0.612-0.484l-0.255-0.274l-0.186-0.263l-0.118-0.263l-0.02-0.278 l0.088-0.253l0.186-0.22l1.269-0.442l0.177-0.233l0.078-0.265l0.01-0.278l0.078-0.272l0.491-0.774l0.128-0.263l0.039-0.257 l-0.039-0.253l-0.167-0.253l-0.618-0.078l-4.902,0.594l-2.217-0.3l-0.549,0.039l-0.53,0.169l-11.099,4.918l-0.834,0.55l-4.33,1.853 l-0.579,0.383l-0.422,0.575l-0.304,0.224l-0.425,0.134l-0.775,0.004l-3.241-0.634l-1.158-0.076l-0.393,0.117l-0.451,0.222 l-0.785,0.548l-0.425,0.356l-0.334,0.342l-1.315,1.885l-0.216,0.233l-0.265,0.19l-2.152,0.909l-1.57,0.423l-1.377,0.206 l-5.468,0.128l0.893-2.08l0.167-0.538l0.088-0.558l-0.01-5.688l-0.039-0.274l-0.069-0.259l-0.314-0.313l-0.54-0.356l-1.246-0.426 l-0.651-0.136l-0.491-0.035l-0.549,0.051l-0.608-0.035l-1.109-0.266l-1.337-0.486l-1.197-1.008l-3.672-3.875l1.148,0.029 l1.661,0.23l0.579,0.021l0.589-0.07l2.672-0.843l1.158-0.21l3.476,0.3l1.089-0.021l0.53-0.146l1.887-0.828l4.683-1.03l0.697-0.257 l7.279-6.041l2.031-0.889l4.202-1.232l0.373-0.25l0.425-0.46l1.354-2.729l3.516-5.569l0.245-0.615l0.461-0.693l3.947-4.854 l1.347-1.005l0.186-0.134l1.839,0.422l4.373-0.651l4.79-1.355l4.021-2.193l1.204-0.329l1.478,2.677l-0.194,5.2l-1.86,1.6 l-1.02,0.421l-0.783,1.024l-0.314,1.283l0.371,1.19l1.499,2.554l0.855,0.943l1.329,0.418l2.683-0.584l4.789-2.914l2.281-0.676 l1.087-0.48l0.994-1.169l0.484-1.433l-0.412-1.301l-1.081-1.255l-0.17-0.649l1.88-1.502l0.742,0.517l0.803,0.135l0.685-0.32 l0.407-0.85h0.427l1.014,0.677l2.668,1.234l1.107,0.72l0.84,1.049l2.189,3.39l0.216,0.726l0.319,3.781l-1.689,2.705l1.32,4.617 l-0.551,2.179l1.838-0.562l1.251,1.326l1.251,1.672l1.468,0.813l1.514,0.353l3.245,1.662l1.56,0.561l-0.402,0.359l-0.185,0.092 l-0.278,0.061l-6.211-2.018l-3.054-0.35l-0.747,2.367l0.613,0.901l1.025,0.84l0.989,1.076l0.433,1.627l0.592,0.747l1.39-0.006 l2.776-0.509l2.688,0.588l5.34,1.982h2.817l1.035-0.735l-0.35-1.014l-1.071-0.898l-1.133-0.389l-0.721-0.496l-0.881-1.097 l-0.984-1.024l5.727,4.081l3.507,1.654l0.428,0.101l0.034,0.009l0.059,3.374l-1.812,7.154l-0.157,1.155l-0.033,4.203l-1.131,5.086 l0.458,7.77l-0.922,7.896l0.046,4.119l1.295,2.892l4.238,4.167l1.472,2.685l0.222,3.143l-1.125,2.329L526.824,408.619z M492.992,301.526l1.236,0.765l1.272,0.586l1.102,0.691l0.747,1.064l-4.197,3.864l-1.056,0.499l-0.397,0.336l-0.288,0.629 l-0.618,2.474h-0.397l0.201-2.003l0.196-0.629l-0.989,0.324l-0.798,2.392l-1.136,1.722l-1.064,1.183l-0.375,1.37l-1.059-1.074 l-0.02-1.325l0.391-1.24l-1.134-1.729l-1.067-0.523l-1.009-0.897l-1.092-0.342l-1.176,1.193l-0.533,1.126l-1.171,0.268l-1.472-1.16 l-0.403-1.15l-0.379-2.084l0.032-2l1.22-2.136l-0.767-3.109l0.034-2.352l2.338-0.877l5.145,1.112l2.755,0.176l2.034-1.288 l1.885,2.291L492.992,301.526z"/>
+                        </g>
+                        
+                        <!-- Grand Tunis (1-4) - POLYGONES AGRANDIS ET MIEUX ESPACÉS -->
+                        <!-- Tunis -->
+                        <polygon class="gouvernorat grand-tunis" data-gouvernorat="1" points="300,70 350,65 365,105 330,115 300,108" fill="#FFEB64" stroke="#333" stroke-width="1" />
+                        <!-- Ariana -->
+                        <polygon class="gouvernorat grand-tunis" data-gouvernorat="2" points="365,70 420,65 435,110 395,120" fill="#89B8E4" stroke="#333" stroke-width="1" />
+                        <!-- Ben Arous -->
+                        <polygon class="gouvernorat grand-tunis" data-gouvernorat="3" points="330,120 385,115 400,160 345,165" fill="#FBD165" stroke="#333" stroke-width="1" />
+                        <!-- Manouba -->
+                        <polygon class="gouvernorat grand-tunis" data-gouvernorat="4" points="280,108 330,103 345,155 295,160" fill="#AC8FC7" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Nord-Est (5-7) -->
+                        <!-- Nabeul -->
+                        <polygon class="gouvernorat nord-est" data-gouvernorat="5" points="400,105 465,100 485,155 445,165" fill="#F8A758" stroke="#333" stroke-width="1" />
+                        <!-- Zaghouan -->
+                        <polygon class="gouvernorat nord-est" data-gouvernorat="6" points="370,160 430,155 445,210 385,215" fill="#E89BBD" stroke="#333" stroke-width="1" />
+                        <!-- Bizerte (POINT LE PLUS HAUT - aligné avec Y=30) -->
+                        <polygon class="gouvernorat nord-est" data-gouvernorat="7" points="330,30 395,25 410,75 350,82" fill="#BACE6B" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Nord-Ouest (8-11) -->
+                        <!-- Béja -->
+                        <polygon class="gouvernorat nord-ouest" data-gouvernorat="8" points="200,130 270,125 285,190 215,195" fill="#8EC79A" stroke="#333" stroke-width="1" />
+                        <!-- Jendouba -->
+                        <polygon class="gouvernorat nord-ouest" data-gouvernorat="9" points="150,155 220,150 240,220 170,225" fill="#8EC79A" stroke="#333" stroke-width="1" />
+                        <!-- Le Kef -->
+                        <polygon class="gouvernorat nord-ouest" data-gouvernorat="10" points="220,220 290,215 310,285 240,290" fill="#8EC79A" stroke="#333" stroke-width="1" />
+                        <!-- Siliana -->
+                        <polygon class="gouvernorat nord-ouest" data-gouvernorat="11" points="285,285 360,280 380,350 310,355" fill="#8EC79A" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Centre-Est (12-15) -->
+                        <!-- Sousse -->
+                        <polygon class="gouvernorat centre-est" data-gouvernorat="12" points="410,170 470,165 490,230 430,235" fill="#89B8E4" stroke="#333" stroke-width="1" />
+                        <!-- Monastir -->
+                        <polygon class="gouvernorat centre-est" data-gouvernorat="13" points="465,185 520,180 540,245 480,250" fill="#89B8E4" stroke="#333" stroke-width="1" />
+                        <!-- Mahdia -->
+                        <polygon class="gouvernorat centre-est" data-gouvernorat="14" points="485,225 535,220 555,285 505,290" fill="#89B8E4" stroke="#333" stroke-width="1" />
+                        <!-- Sfax -->
+                        <polygon class="gouvernorat centre-est" data-gouvernorat="15" points="450,285 515,280 535,360 470,365" fill="#89B8E4" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Centre-Ouest (16-18) -->
+                        <!-- Kairouan -->
+                        <polygon class="gouvernorat centre-ouest" data-gouvernorat="16" points="340,350 405,345 425,415 360,420" fill="#FFEB64" stroke="#333" stroke-width="1" />
+                        <!-- Kasserine -->
+                        <polygon class="gouvernorat centre-ouest" data-gouvernorat="17" points="280,375 345,370 365,445 300,450" fill="#FFEB64" stroke="#333" stroke-width="1" />
+                        <!-- Sidi Bouzid -->
+                        <polygon class="gouvernorat centre-ouest" data-gouvernorat="18" points="340,420 405,415 425,495 360,500" fill="#FFEB64" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Sud-Ouest (19-20) -->
+                        <!-- Gafsa -->
+                        <polygon class="gouvernorat sud-ouest" data-gouvernorat="19" points="250,430 315,425 335,505 270,510" fill="#F8A758" stroke="#333" stroke-width="1" />
+                        <!-- Tozeur -->
+                        <polygon class="gouvernorat sud-ouest" data-gouvernorat="20" points="180,495 245,490 265,565 200,570" fill="#F8A758" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Sud-Est (21-24) -->
+                        <!-- Kébili -->
+                        <polygon class="gouvernorat sud-est" data-gouvernorat="21" points="300,505 365,500 385,575 320,580" fill="#E89BBD" stroke="#333" stroke-width="1" />
+                        <!-- Gabès -->
+                        <polygon class="gouvernorat sud-est" data-gouvernorat="22" points="420,420 485,415 505,490 440,495" fill="#E89BBD" stroke="#333" stroke-width="1" />
+                        <!-- Médenine -->
+                        <polygon class="gouvernorat sud-est" data-gouvernorat="23" points="430,500 495,495 515,570 450,575" fill="#E89BBD" stroke="#333" stroke-width="1" />
+                        <!-- Tataouine (POINT LE PLUS BAS - aligné avec Y=577) -->
+                        <polygon class="gouvernorat sud-est" data-gouvernorat="24" points="370,575 435,570 455,650 390,655" fill="#E89BBD" stroke="#333" stroke-width="1" />
+                        
+                        <!-- Bordures -->
+                        <rect x="0" y="0" width="580" height="680" fill="none" stroke="#666" stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <!-- Panneau d'informations -->
+                <div class="info-panel">
+                    <p class="info-panel-empty">Survolez un gouvernorat pour voir les détails</p>
+                </div>
+            </div>
+
+            <!-- Légende -->
+            <div class="legend">
+                <h3>Régions de Tunisie</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #CE1126;"></div>
+                        <span class="legend-text">Grand Tunis</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #4CAF50;"></div>
+                        <span class="legend-text">Nord-Est</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #2196F3;"></div>
+                        <span class="legend-text">Nord-Ouest</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #FF9800;"></div>
+                        <span class="legend-text">Centre-Est</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #9C27B0;"></div>
+                        <span class="legend-text">Centre-Ouest</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #F4A460;"></div>
+                        <span class="legend-text">Sud-Ouest</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #795548;"></div>
+                        <span class="legend-text">Sud-Est</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <section class="instructions-section" style="margin: 40px 0; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <h2>Comment utiliser cette carte ?</h2>
+            <ul style="margin-left: 20px;">
+                <li><strong>Survolez</strong> n'importe quel gouvernorat pour afficher ses informations détaillées dans le panneau de droite</li>
+                <li><strong>Cliquez</strong> sur un gouvernorat pour accéder à sa page détaillée avec plus d'informations</li>
+                <li>Utilisez la <strong>légende</strong> pour identifier les différentes régions par couleur</li>
+                <li>Consultez les <strong>statistiques</strong> en haut pour une vue d'ensemble de la Tunisie</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Projet Web - Carte Interactive de la Tunisie</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/carte.js"></script>
+</body>
+</html>

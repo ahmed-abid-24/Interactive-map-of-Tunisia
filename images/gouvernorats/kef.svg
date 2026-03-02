@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="url(#grad)"/>
+    <circle cx="200" cy="80" r="40" fill="white" opacity="0.9"/>
+    <text x="200" y="90" text-anchor="middle" font-size="20" fill="#2196F3" font-weight="bold">👑</text>
+    <text x="200" y="200" text-anchor="middle" font-size="32" fill="white" font-weight="bold">LE KEF</text>
+    <text x="200" y="240" text-anchor="middle" font-size="14" fill="white" opacity="0.9">La perle du Nord</text>
+</svg>
