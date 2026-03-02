@@ -1,11 +1,26 @@
-# Interactive Map of Tunisia
+# Interactive Map of Tunisia 🇹🇳
 
-An educational web project that presents an interactive SVG map of the 24 governorates of Tunisia.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Status](https://img.shields.io/badge/Project-Active-success)](#)
+
+An educational web project that presents an **interactive SVG map** of Tunisia’s **24 governorates**.
 
 Users can:
 - hover over a governorate to view key information,
 - click a governorate to open its dedicated detail page,
 - explore national statistics and regional grouping.
+
+## Live Demo
+
+If GitHub Pages is enabled, the project is available at:
+
+**https://ahmed-abid-24.github.io/Interactive-map-of-Tunisia/**
+
+## Preview
+
+![Map Preview](images/carte/carte-perso.svg)
 
 ## Features
 
